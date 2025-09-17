@@ -1,17 +1,28 @@
 // App.jsx
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
 import videos from "./videos.json";
 
 export default function App() {
-  const [currentVideo, setCurrentVideo] = useState(videos[0]);
+  // Read ?video=id from URL
+  const params = new URLSearchParams(window.location.search);
+  const initialVideoId = params.get("video");
+
+  const [currentVideo, setCurrentVideo] = useState(
+    videos.find((v) => v.id === initialVideoId) || videos[0]
+  );
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Update URL when switching videos
+  useEffect(() => {
+    window.history.replaceState({}, "", `?video=${currentVideo.id}`);
+  }, [currentVideo]);
 
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col md:flex-row">
       {/* Mobile Navbar */}
       <div className="flex items-center justify-between p-4 bg-gray-800 md:hidden">
-        <h1 className="text-lg font-bold"> PixelBoy Here</h1>
+        <h1 className="text-lg font-bold"> Description Links</h1>
         <button onClick={() => setSidebarOpen(!sidebarOpen)}>
           {sidebarOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -25,9 +36,9 @@ export default function App() {
       >
         <h2 className="text-lg font-bold mb-4">📺 Other Videos</h2>
         <div className="space-y-3">
-          {videos.map((video, i) => (
+          {videos.map((video) => (
             <div
-              key={i}
+              key={video.id}
               onClick={() => {
                 setCurrentVideo(video);
                 setSidebarOpen(false); // close sidebar on mobile

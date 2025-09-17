@@ -1,17 +1,14 @@
 [
   {
-    "id": "1",
-    "title": "Episode 1 - Shader Showcase",
-    "youtubeId": "dQw4w9WgXcQ",
-    "notes": "All Shaders credits goes to their respective creator's or Owners. I am not Owner or Creator of any of these shaders. You can Get These Shaders form Newb Discord Server.",
-    "links": [
-      { "label": "Newb Discord", "url": "https://discord.com/invite/newb-community-844591537430069279" },
-      { "label": "Beta Hider", "url": "https://mcpedl.com/debug-screen-hider/" },
-      { "label": "Shader Download", "url": "https://www.mediafire.com/file/ioikepddn6sbmc8/YSS_RD_1.9.10.mcpack/file" },
-      { "label": "Patch 1218025 Arm64/32 Musc", "url": "https://linkpays.in/patch1218025Arm6432musc" },
-      { "label": "Patch 1218025 Arm64", "url": "https://tinyurl.com/patch1218025Arm64" },
-      { "label": "Patch 1218025 Arm32", "url": "https://tinyurl.com/patch1218025Arm32" }
-    ],
-    "footer": "Thanks For Watching ❤✨"
-  }
+  "id": "2342352",
+  "title": "Minecraft Patch 1.21.101 with MBL 2 Support",
+  "youtubeId": "3BLGrAFEIOw",
+  "notes": "📦 Minecraft Patch 1.21.101 with MBL 2 Support\n\n🎵 With Music (ARM64/32)\n🔗 https://linkpays.in/Patch121101_Arm_64_MBL2_Music\n\n🔇 No Music (ARM64/32)\n🔗 Added Soon 👀\n\n📘 How to Open Linkpays 👉 https://youtu.be/-8OZhwM13n0\n📶 Jio Users: Use a VPN (1.1.1.1 / QuickVPN) if Linkpays doesn’t open\n\n⚡ Shader Support:\n✅ All Shaders working from 1.18.30 → 1.21.101\n❌ HAL Shaders not supported\n\n📜 Copyright Disclaimer:\nThis video & patch are for educational/demo purposes only.\nMinecraft is © Mojang/Microsoft.\n\n🙏 Credits to community devs for keeping Minecraft patches alive 💚",
+  "links": [
+    { "label": "Patch 1.21.101 Arm64 (With Music)", "url": "https://linkpays.in/Patch121101_Arm_64_MBL2_Music" },
+    { "label": "How to Open Linkpays (YouTube)", "url": "https://youtu.be/-8OZhwM13n0" }
+  ],
+  "footer": "Thanks for watching! Don't forget to subscribe ✨"
+}
+
 ]
